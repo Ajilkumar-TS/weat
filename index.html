@@ -33,7 +33,7 @@
     console.log('inside search function')
      console.log(city.value)
     if(city.value){
-      const response = await fetch(`https:api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=5fe36b192ffd1c36dffb6752bc1722b2`)
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=5fe36b192ffd1c36dffb6752bc1722b2`)
       console.log(response)
       response.json().then((data)=>{
         console.log(data);
